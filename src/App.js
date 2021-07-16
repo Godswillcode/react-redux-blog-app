@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import './App.css';
-import Blogs from './components/Blogs/Blogs';
 import Header from './components/Header/Header';
 import { login, logout } from './features/userSlice';
 import { auth } from './firebase';
+import Blogs from "./components/Blogs/Blogs"
 
 function App() {
   const dispatch = useDispatch();

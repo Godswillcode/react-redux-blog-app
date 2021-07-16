@@ -1,5 +1,5 @@
 import { Button } from "@material-ui/core"
-import Blog from "../Blog/Blog"
+import Blog from "./Blog/Blog"
 import "./Blogs.css"
 
 const Blogs = () => {
