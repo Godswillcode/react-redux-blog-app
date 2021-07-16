@@ -1,8 +1,11 @@
 import { Avatar } from '@material-ui/core'
+import { useSelector } from 'react-redux'
+import { selectUser } from '../../features/userSlice'
 import './Header.css'
 
 
 const Header = () => {
+   const user = useSelector(selectUser)
     return (
         <div className="header">
             <div className="header__left">
