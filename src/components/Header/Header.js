@@ -1,5 +1,6 @@
-import { Avatar } from '@material-ui/core'
+import { Avatar, Button, } from '@material-ui/core'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { selectUser } from '../../features/userSlice'
 import './Header.css'
 
@@ -9,26 +10,33 @@ const Header = () => {
     return (
         <div className="header">
             <div className="header__left">
-                <a to="/">Godswill Blog App</a>
+                <Link to="/">Godswill Blog App</Link>
             </div>
 
-            <div className="header__right">
-             <div className="header__icons">
-                 <a to="/">
-                     <i className="fas fa-home"></i>
-                 </a>
-                 <a to="#search">
-                     <i className="fas fa-search"></i>
-                 </a>
-                 <a to="#notifications">
-                     <i className="fas fa-bell"></i>
-                 </a>
-                 <a to="/">
-                     <i className="fas fa-power-off" alt="Sign out"></i>
-                 </a>
-                 <Avatar className="header__avatar"></Avatar>
-             </div>
-            </div>
+                {
+                    user ? (
+                        <div className="header__right">
+                        <div className="header__icons">
+                            <Link to="/">
+                                <i className="fas fa-home"></i>
+                            </Link>
+                            <Link to="#search">
+                                <i className="fas fa-search"></i>
+                            </Link>
+                            <Link to="#notifications">
+                                <i className="fas fa-bell"></i>
+                            </Link>
+                            <Link to="/">
+                                <i className="fas fa-power-off" alt="Sign out"></i>
+                            </Link>
+                             <a><i onClick={signOut} className="fas fa"></i></a>
+                            <Avatar className="header__avatar"></Avatar>
+                        </div>
+                       </div>
+                    ) : (
+                        <Button onClick={signIn} variant="contained" color="primary">Sign In</Button>
+                    )
+                }
         </div>
     )
 }
