@@ -25,24 +25,23 @@ const Header = () => {
 
                 {
                     user ? (
-                        <div className="header__right">
-                        <div className="header__icons">
-                            <Link to="/">
-                                <i className="fas fa-home"></i>
-                            </Link>
-                            <Link to="#search">
-                                <i className="fas fa-search"></i>
-                            </Link>
-                            <Link to="#notifications">
-                                <i className="fas fa-bell"></i>
-                            </Link>
-                            <Link to="/">
-                                <i className="fas fa-power-off" alt="Sign out"></i>
-                            </Link>
-                             <a><i onClick={signOut} className="fas fa-power-off"></i></a>
-                            <Avatar className="header__avatar"></Avatar>
-                        </div>
-                       </div>
+                        <div className='header__right'>
+					<div className='header__icons'>
+						<Link to='/'>
+							<i className='fas fa-home'></i>{' '}
+						</Link>{' '}
+						<Link to='#search'>
+							<i className='fas fa-search'></i>{' '}
+						</Link>{' '}
+						<Link to='#notifications'>
+							<i className='fas fa-bell'></i>{' '}
+						</Link>
+						<Link>
+							<i onClick={signOut} class='fas fa-power-off' alt='Sign Out'></i>
+						</Link>
+						<Avatar className='header__avatar' src={user.photo}></Avatar>
+					</div>
+				</div>
                     ) : (
                         <Button onClick={signIn} variant="contained" color="primary">Sign In</Button>
                     )
