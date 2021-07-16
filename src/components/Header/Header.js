@@ -2,11 +2,21 @@ import { Avatar, Button, } from '@material-ui/core'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { selectUser } from '../../features/userSlice'
+import { auth, provider } from '../../firebase';
 import './Header.css'
 
 
 const Header = () => {
    const user = useSelector(selectUser)
+
+   
+	const signIn = () => {
+		auth.signInWithPopup(provider).catch((error) => alert(error.message));
+	};
+
+	const signOut = () => {
+		auth.signOut();
+	};
     return (
         <div className="header">
             <div className="header__left">
@@ -29,7 +39,7 @@ const Header = () => {
                             <Link to="/">
                                 <i className="fas fa-power-off" alt="Sign out"></i>
                             </Link>
-                             <a><i onClick={signOut} className="fas fa"></i></a>
+                             <a><i onClick={signOut} className="fas fa-power-off"></i></a>
                             <Avatar className="header__avatar"></Avatar>
                         </div>
                        </div>
