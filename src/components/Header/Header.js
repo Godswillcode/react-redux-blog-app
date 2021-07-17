@@ -36,7 +36,7 @@ const Header = () => {
 						<Link to='#notifications'>
 							<i className='fas fa-bell'></i>{' '}
 						</Link>
-						<Link>
+						<Link to="!#">
 							<i onClick={signOut} class='fas fa-power-off' alt='Sign Out'></i>
 						</Link>
 						<Avatar className='header__avatar' src={user.photo}></Avatar>
