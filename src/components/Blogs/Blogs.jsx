@@ -6,7 +6,7 @@ const Blogs = () => {
     return (
         <div className="blogs">
            
-          <a to="/addBlog">
+          <Link to="/addBlog">
               <Button
                variant="contained"
                color="primary"
@@ -14,7 +14,7 @@ const Blogs = () => {
               >
                  Add Blog
               </Button>
-          </a>
+          </Link>
           <div className="blogs__blogsList">
                  <Blog
                  title="My first Blog"
