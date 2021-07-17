@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       <Header/>
 
-     <Route  >
+     <Route path="/">
      <div className="app__page">
         <Blogs/>
       </div>
