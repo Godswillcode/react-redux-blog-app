@@ -14,7 +14,7 @@ const Blog = ({id, title, content, timestamp, thumbnailUrl, username}) => {
 				<h3 className='blog___title'>{title}</h3>
 				<p className='blog__timestamp'>{timestamp}</p>
 				<h5 className='blog__summary'>{truncate(content)}</h5>
-				<a className='blog__readMore'>Read More...</a>
+				<Link className='blog__readMore'>Read More...</Link>
 				<p className='blog__author'>Blog By {username}</p>
 			</div>
         </div>
