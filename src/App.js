@@ -29,9 +29,7 @@ function App() {
     <div className="App">
       <Header/>
 
-      <div className="app__page">
-        <Blogs/>
-      </div>
+     
     </div>
   );
 }
