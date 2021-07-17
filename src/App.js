@@ -31,7 +31,9 @@ function App() {
       <Header/>
 
      <Route>
-       
+     <div className="app__page">
+        <Blogs/>
+      </div>
      </Route>
     </div>
   );
