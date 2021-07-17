@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import { login, logout } from './features/userSlice';
 import { auth } from './firebase';
 import Blogs from "./components/Blogs/Blogs"
+import { Route } from 'react-router-dom';
 
 function App() {
   const dispatch = useDispatch();
@@ -29,7 +30,9 @@ function App() {
     <div className="App">
       <Header/>
 
-     
+     <Route>
+       
+     </Route>
     </div>
   );
 }
