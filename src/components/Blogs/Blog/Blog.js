@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Blog.css'
 
 const Blog = ({id, title, content, timestamp, thumbnailUrl, username}) => {
