@@ -25,6 +25,13 @@ const AddBlog = () => {
 
     history.push("/");
   };
+
+
+  return (
+    <div className='addBlog'>
+
+    </div>
+  )
 };
 
 export default AddBlog;
