@@ -37,6 +37,13 @@ const AddBlog = () => {
 						onChange={(e) => setTitle(e.target.value)}
 						type='text'
 					/>
+
+<h3>Blog Content</h3>
+					<textarea
+						value={content}
+						onChange={(e) => setContent(e.target.value)}
+						type='text'
+					/>
                  </div>
               </form>
     </div>
