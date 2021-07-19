@@ -7,6 +7,7 @@ import { useHistory } from 'react-router';
 
 const AddBlog = () => {
   const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
 
 }
 
