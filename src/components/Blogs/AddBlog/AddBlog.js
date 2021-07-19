@@ -6,5 +6,7 @@ import './AddBlog.css';
 import { useHistory } from 'react-router';
 
 const AddBlog = () => {
-  
+
 }
+
+export default AddBlog;
