@@ -9,7 +9,8 @@ const AddBlog = () => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [thumbnailUrl, setThumbnailUrl] = useState('');
-
+  const user = useSelector(selectUser);
+	const history = useHistory();
 
 }
 
