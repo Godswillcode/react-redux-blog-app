@@ -30,8 +30,9 @@ const AddBlog = () => {
   return (
     <div className='addBlog'>
               <form>
-                 <div>
-                   
+                 <div className='addBlog__details'>
+                 <h3>Blog Title</h3>
+                 
                  </div>
               </form>
     </div>
