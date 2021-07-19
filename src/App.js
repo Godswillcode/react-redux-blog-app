@@ -6,6 +6,7 @@ import { login, logout } from "./features/userSlice";
 import { auth } from "./firebase";
 import Blogs from "./components/Blogs/Blogs";
 import { Route, Switch } from "react-router-dom";
+import AddBlog from "./components/Blogs/AddBlog/AddBlog";
 
 function App() {
   const dispatch = useDispatch();
