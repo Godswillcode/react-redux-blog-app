@@ -4,6 +4,22 @@ import Blog from "./Blog/Blog";
 import "./Blogs.css";
 
 const Blogs = () => {
+  const user = useSelector(selectUser);
+
+	const [blogs, setBlogs] = useState([]);
+
+	useEffect(() => {
+		db.collection('blogs')
+			.orderBy('timestamp', 'desc')
+			.onSnapshot((snapshot) =>
+				setBlogs(
+					snapshot.docs.map((doc) => ({
+						id: doc.id,
+						data: doc.data()
+					}))
+				)
+			);
+	}, []);
   return (
     <div className="blogs">
       <Link to="/addBlog">
