@@ -30,16 +30,16 @@ function App() {
     <div className="App">
       <Header />
 
-         <Switch>
-         <Route path='/addBlog'>
-						<AddBlog />
-					</Route>
-         <Route exact path="/">
-        <div className="app__page">
-          <Blogs />
-        </div>
-      </Route>
-         </Switch>
+      <Switch>
+        <Route path="/addBlog">
+          <AddBlog />
+        </Route>
+        <Route exact path="/">
+          <div className="app__page">
+            <Blogs />
+          </div>
+        </Route>
+      </Switch>
     </div>
   );
 }
