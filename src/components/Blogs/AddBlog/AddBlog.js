@@ -26,34 +26,42 @@ const AddBlog = () => {
     history.push("/");
   };
 
-
   return (
-    <div className='addBlog'>
-              <form>
-                 <div className='addBlog__details'>
-                 <h3>Blog Title</h3>
-                 <input
-						value={title}
-						onChange={(e) => setTitle(e.target.value)}
-						type='text'
-					/>
+    <div className="addBlog">
+      <form>
+        <div className="addBlog__details">
+          <h3>Blog Title</h3>
+          <input
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            type="text"
+          />
 
-<h3>Blog Content</h3>
-					<textarea
-						value={content}
-						onChange={(e) => setContent(e.target.value)}
-						type='text'
-					/>
+          <h3>Blog Content</h3>
+          <textarea
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+            type="text"
+          />
           <h3>Blog Thumbnail Url</h3>
-					<input
-						value={thumbnailUrl}
-						onChange={(e) => setThumbnailUrl(e.target.value)}
-						type='text'
-					/>
-                 </div>
-              </form>
+          <input
+            value={thumbnailUrl}
+            onChange={(e) => setThumbnailUrl(e.target.value)}
+            type="text"
+          />
+        </div>
+        <Button
+					variant='contained'
+					type='submit'
+					color='primary'
+					onClick={addBlog}
+					startIcon={<i class='fas fa-check'></i>}
+				>
+					Submit
+				</Button>
+      </form>
     </div>
-  )
+  );
 };
 
 export default AddBlog;
