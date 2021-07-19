@@ -44,6 +44,12 @@ const AddBlog = () => {
 						onChange={(e) => setContent(e.target.value)}
 						type='text'
 					/>
+          <h3>Blog Thumbnail Url</h3>
+					<input
+						value={thumbnailUrl}
+						onChange={(e) => setThumbnailUrl(e.target.value)}
+						type='text'
+					/>
                  </div>
               </form>
     </div>
