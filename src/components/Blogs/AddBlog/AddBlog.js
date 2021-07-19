@@ -29,7 +29,11 @@ const AddBlog = () => {
 
   return (
     <div className='addBlog'>
-
+              <form>
+                 <div>
+                   
+                 </div>
+              </form>
     </div>
   )
 };
