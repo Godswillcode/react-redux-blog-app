@@ -32,7 +32,11 @@ const AddBlog = () => {
               <form>
                  <div className='addBlog__details'>
                  <h3>Blog Title</h3>
-                 
+                 <input
+						value={title}
+						onChange={(e) => setTitle(e.target.value)}
+						type='text'
+					/>
                  </div>
               </form>
     </div>
