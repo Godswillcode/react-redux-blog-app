@@ -4,3 +4,7 @@ import { useSelector } from 'react-redux';
 import { selectUser } from '../../../features/userSlice';
 import './AddBlog.css';
 import { useHistory } from 'react-router';
+
+const AddBlog = () => {
+  
+}
