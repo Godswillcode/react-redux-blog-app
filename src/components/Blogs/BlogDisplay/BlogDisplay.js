@@ -54,3 +54,14 @@ const BlogDisplay = ({ id, title, content, thumbnailUrl, author }) => {
                 <div className='blogDisplay__commentsContainer'>
 					{user ? (
 						<>
+                        <form className='blogDisplay__addComment'>
+								<input
+									value={input}
+									onChange={(e) => setInput(e.target.value)}
+									type='text'
+									placeholder='Write a comment...'
+								/>
+								<button onClick={sendComment} type='submit'>
+									Add
+								</button>
+							</form>
