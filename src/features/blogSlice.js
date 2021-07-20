@@ -23,3 +23,10 @@ export const blogSlice = createSlice({
 
 
 export const { setBlog } = blogSlice.actions;
+
+
+export const selectBlogId = (state) => state.blog.blogId;
+export const selectBlogTitle = (state) => state.blog.blogTitle;
+export const selectBlogContent = (state) => state.blog.blogContent;
+export const selectBlogThumbnailUrl = (state) => state.blog.blogThumbnailUrl;
+export const selectBlogAuthor = (state) => state.blog.blogAuthor;
