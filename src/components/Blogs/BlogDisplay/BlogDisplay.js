@@ -23,7 +23,7 @@ const BlogDisplay = ({ id, title, content, thumbnailUrl, author }) => {
           }))
         )
       );
-  }, []);
+  }, [id]);
 
   const sendComment = (e) => {
     e.preventDefault();
