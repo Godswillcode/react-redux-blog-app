@@ -46,3 +46,7 @@ const BlogDisplay = ({ id, title, content, thumbnailUrl, author }) => {
 			<p className='blogDisplay__content'>{content}</p>
 
 			<hr />
+
+            
+			<div className='blogDisplay__comments'>
+				<h3>Comments</h3>
