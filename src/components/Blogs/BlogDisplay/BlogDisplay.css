@@ -12,3 +12,9 @@
 	font-weight: 400;
 	text-align: left;
 }
+
+.blogDisplay__thumbnail {
+	object-fit: contain;
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
