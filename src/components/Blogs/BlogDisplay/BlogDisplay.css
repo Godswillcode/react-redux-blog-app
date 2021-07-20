@@ -33,3 +33,7 @@
 .blogDisplay > hr {
 	margin-bottom: 10px;
 }
+
+.blogDisplay__comments > h3 {
+	font-weight: 400;
+}
