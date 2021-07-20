@@ -1,3 +1,9 @@
+.blogs__blogsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .blogs {
   margin-top: 40px;
   text-align: center;

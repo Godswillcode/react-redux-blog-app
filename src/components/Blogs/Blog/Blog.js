@@ -6,7 +6,7 @@ import "./Blog.css";
 
 const Blog = ({ id, title, content, timestamp, thumbnailUrl, username }) => {
   const truncate = (str) => {
-    return str.length > 10 ? str.substring(0, 75) + "..." : str;
+    return str.length > 10 ? str.substring(0, 40) + "..." : str;
   };
 
   const dispatch = useDispatch();
