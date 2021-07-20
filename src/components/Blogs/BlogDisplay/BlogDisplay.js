@@ -77,3 +77,16 @@ const BlogDisplay = ({ id, title, content, thumbnailUrl, author }) => {
 						</>
 					) : (
 						<>
+                        {comments.map((comment) => (
+								<div className='blogDisplay__comment'>
+									<Avatar src={comment.data.userPhoto} alt='User Photo' />
+									<p>{comment.data.message}</p>
+								</div>
+							))}
+						</>
+					)}
+				</div>
+			</div>
+		</div>
+	);
+};
