@@ -4,3 +4,10 @@ import db from '../../../firebase';
 import { selectUser } from '../../../features/userSlice';
 import { useSelector } from 'react-redux';
 import './BlogDisplay.css';
+
+
+const BlogDisplay = ({ id, title, content, thumbnailUrl, author }) => {
+	const [input, setInput] = useState('');
+	const [comments, setComments] = useState([]);
+
+	const user = useSelector(selectUser);
