@@ -40,3 +40,11 @@
 .blogDisplay__commentsContainer {
 	margin-top: 20px;
 }
+
+.blogDisplay__comment {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 10px;
+	margin-top: 5px;
+}
