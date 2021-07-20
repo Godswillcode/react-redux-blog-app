@@ -52,3 +52,8 @@
 .blogDisplay__comment > p {
 	margin-left: 10px;
 }
+
+.blogDisplay__addComment {
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
