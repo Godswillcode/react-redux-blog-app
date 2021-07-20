@@ -35,3 +35,14 @@ const BlogDisplay = ({ id, title, content, thumbnailUrl, author }) => {
 		});
 		setInput('');
 	};
+
+    
+	return (
+		<div className='blogDisplay'>
+			<h2 className='blogDisplay__title'>{title}</h2>
+			<span className='blogDisplay__author'>Author: {author}</span>
+
+			<img className='blogDisplay__thumbnail' src={thumbnailUrl} alt='' />
+			<p className='blogDisplay__content'>{content}</p>
+
+			<hr />
