@@ -20,3 +20,6 @@ export const blogSlice = createSlice({
 		}
 	}
 });
+
+
+export const { setBlog } = blogSlice.actions;
