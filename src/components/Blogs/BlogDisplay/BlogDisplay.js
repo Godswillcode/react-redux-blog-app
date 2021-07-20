@@ -26,3 +26,12 @@ const BlogDisplay = ({ id, title, content, thumbnailUrl, author }) => {
 				)
 			);
 	}, []);
+
+    const sendComment = (e) => {
+		e.preventDefault();
+		db.collection('blogs').doc(id).collection('comments').add({
+			message: input,
+			userPhoto: user.photo
+		});
+		setInput('');
+	};
