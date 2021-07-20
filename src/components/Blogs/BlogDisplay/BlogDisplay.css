@@ -57,3 +57,9 @@
 	margin-top: -10px;
 	margin-bottom: 20px;
 }
+
+.blogDisplay__addComment > input {
+	border: 1px solid lightgray;
+	outline: none;
+	height: 25px;
+}
