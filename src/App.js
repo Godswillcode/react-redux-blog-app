@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Blogs from './components/Blogs/Blogs';
 import { login, logout } from './features/userSlice';
