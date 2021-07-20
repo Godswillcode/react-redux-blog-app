@@ -11,3 +11,18 @@ const BlogDisplay = ({ id, title, content, thumbnailUrl, author }) => {
 	const [comments, setComments] = useState([]);
 
 	const user = useSelector(selectUser);
+
+    
+	useEffect(() => {
+		db.collection('blogs')
+			.doc(id)
+			.collection('comments')
+			.onSnapshot((snapshot) =>
+				setComments(
+					snapshot.docs.map((doc) => ({
+						id: doc.id,
+						data: doc.data()
+					}))
+				)
+			);
+	}, []);
