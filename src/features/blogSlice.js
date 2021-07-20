@@ -30,3 +30,5 @@ export const selectBlogTitle = (state) => state.blog.blogTitle;
 export const selectBlogContent = (state) => state.blog.blogContent;
 export const selectBlogThumbnailUrl = (state) => state.blog.blogThumbnailUrl;
 export const selectBlogAuthor = (state) => state.blog.blogAuthor;
+
+export default blogSlice.reducer;
