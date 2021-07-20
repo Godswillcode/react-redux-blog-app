@@ -9,3 +9,14 @@ export const blogSlice = createSlice({
 		blogThumbnailUrl: null,
 		blogAuthor: null
 	},
+    reducers: {
+		setBlog: (state, action) => {
+			state.blogId = action.payload.blogId;
+			state.blogTitle = action.payload.blogTitle;
+			state.blogContent = action.payload.blogContent;
+			state.blogThumbnailUrl = action.payload.blogThumbnailUrl;
+			state.blogAuthor = action.payload.blogAuthor;
+			state.blogTimestamp = action.payload.blogTimestamp;
+		}
+	}
+});
