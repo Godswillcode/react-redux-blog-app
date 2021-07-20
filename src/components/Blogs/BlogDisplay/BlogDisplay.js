@@ -50,3 +50,7 @@ const BlogDisplay = ({ id, title, content, thumbnailUrl, author }) => {
             
 			<div className='blogDisplay__comments'>
 				<h3>Comments</h3>
+
+                <div className='blogDisplay__commentsContainer'>
+					{user ? (
+						<>
