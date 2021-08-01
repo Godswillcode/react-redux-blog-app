@@ -14,7 +14,7 @@ import {
   selectBlogTitle,
 } from "./features/blogSlice";
 import "./App.css";
-import BlogDisplay from "./components/Blogs/BlogDisplay/BlogDisplay";
+// import BlogDisplay from "./components/Blogs/BlogDisplay/BlogDisplay";
 
 function App() {
   const dispatch = useDispatch();
