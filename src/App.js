@@ -9,7 +9,7 @@ import AddBlog from "./components/Blogs/AddBlog/AddBlog";
 import {
   selectBlogAuthor,
   selectBlogContent,
-  selectBlogId,
+  sele
   selectBlogThumbnailUrl,
   selectBlogTitle,
 } from "./features/blogSlice";
